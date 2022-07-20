@@ -1,0 +1,83 @@
+body{
+    background-color: #3e92cc;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    background-color: #fffaff;
+    color: #0a2463;
+    padding: 20px;
+    margin: none;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 30px; 
+    text-align: center;
+}
+
+.bloque{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.miniblock{
+    margin-bottom: 10%;
+}
+
+.boton{
+    background-color: #fffaff;
+    border-radius: 5%;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    color: #d8315b;
+    font-weight: 800;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: #d8315b;
+    color: #fffaff;
+}
+
+form{
+    background-color: #fffaff;
+    width: 75%;
+    margin: 10%;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.botonSub{
+    background-color: #d8315b;
+    border-radius: 5%;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    color: #fffaff;
+    text-decoration: none;
+    padding: 5px;
+    margin: 15px;
+    border: none;
+}
+
+.botonSub:hover{
+    cursor: pointer;
+    background-color: #fffaff;
+    color: #d8315b;
+}
+
+.caja{
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-family: 'Varela Round', sans-serif;
+    color: #0a2463;
+    font-weight: bold;
+}
+
+.botUno{
+    text-align: right;
+}

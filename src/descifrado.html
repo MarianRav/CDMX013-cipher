@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM-Descifrado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+          BLINDMESSAGE
+        </h1>
+      </header>
+
+      <main>
+        <form> <!--CAJA DE TEXTO-->
+          <div>
+            <label>Escribe el mensaje que quieres revelar:<br/></label>
+            <textarea class="caja"></textarea>
+          </div>
+
+          <div>
+            <label>Ingresa el número secreto:<br/></label>
+            <input type="number"></input>
+          </div>
+
+          <div class="botUno">
+              <input class="botonSub" type="submit" value="Descubre tu mensaje">
+          </div>
+        </form>
+      </main>
+
+      <script src="cipher.js" type="module"></script>
+</body>
+</html>
