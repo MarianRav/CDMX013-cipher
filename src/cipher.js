@@ -11,19 +11,34 @@ document.addEventListener("click",texto);
 function texto(){
   let mensaje = document.getElementById('box').value;
   let numero = document.getElementById("num").value; 
+  console.log(mensaje);
+  console.log(typeof mensaje);
+  console.log("Tu número secreto es " + numero);
+  
+  /*let caracter = mensaje.split('');
+  console.log(caracter);*/
+ /* let caracter = mensaje.split("");*/
 
-  let codMes = mensaje.charCodeAt(0); /*Iterar el mensaje para que haga lo mismo con cada caracter"*/
+  /*for(let i = 0; i < caracter.length; i++){
+  console.log("Los elementos son:"+ (caracter[i]));*/
+
+  for(let i = 0; i < mensaje.length; i++){
+    let caracter = mensaje.charCodeAt([i]);
+    console.log(caracter); 
+  }
+
+    /*let codMes = mensaje.charCodeAt(0); /*Iterar el mensaje para que haga lo mismo con cada caracter"
     console.log(codMes);
-    console.log(numero);
+    console.log(numero);*/
   
 }
 
-function cifrado(){
+/*function cifrado(){
 
-  let codMes = mensaje.charCodeAt(0); /*Iterar el mensaje para que haga lo mismo con cada caracter"*/
+  let codMes = mensaje.charCodeAt(0); 
   console.log(codMes);
   
-}
+}*/
 
 
 
