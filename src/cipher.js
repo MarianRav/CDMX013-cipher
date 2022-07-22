@@ -10,12 +10,14 @@ document.addEventListener("click",texto);
 
 function texto(){
   let letras = document.getElementById('box').value;
-  let numero = document.getElementById("num").value; 
+  let numero = parseInt(document.getElementById("num").value); 
   let mensaje = letras.toUpperCase();
+
   console.log(letras);
   console.log(mensaje);
   console.log(typeof mensaje);
   console.log("Tu número secreto es " + numero);
+  console.log(typeof numero);
   
 
   /*for(let i = 0; i < caracter.length; i++){
@@ -25,8 +27,11 @@ function texto(){
     let caracter = mensaje.charCodeAt([i]);
     console.log("número ASCII " + caracter);
     //console.log(typeof caracter); -prueba de consola
-    let ejemplo= (caracter- 65 + numero) % 26 + 65; //FÓRMULA
-    console.log("el nuevo valor es " + ejemplo);
+    caracter= (caracter- 65 + numero)% 26 + 65; //FÓRMULA
+    console.log("el nuevo valor es " + caracter);
+    caracter = String.fromCharCode(caracter);
+    console.log(caracter);
+
 
     /* Intento de hacer un ciclo para que al valor de caracter mayor a 90- tenga los valores ASCII DEL INICIO (65)
     if(caracter>90){
