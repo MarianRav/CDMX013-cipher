@@ -6,6 +6,7 @@ export default cipher;*/
 
 
 /*Cifrado*/
+
 document.addEventListener("click",texto);
 
 function texto(){
@@ -20,30 +21,15 @@ function texto(){
   console.log(typeof numero);
   
 
-  /*for(let i = 0; i < caracter.length; i++){
-  console.log("Los elementos son:"+ (caracter[i]));*/
-
   for(let i = 0; i < mensaje.length; i++){
     let caracter = mensaje.charCodeAt([i]);
     console.log("número ASCII " + caracter);
-    //console.log(typeof caracter); -prueba de consola
     caracter= (caracter- 65 + numero)% 26 + 65; //FÓRMULA
     console.log("el nuevo valor es " + caracter);
     caracter = String.fromCharCode(caracter);
     console.log(caracter);
-
-
-    /* Intento de hacer un ciclo para que al valor de caracter mayor a 90- tenga los valores ASCII DEL INICIO (65)
-    if(caracter>90){
-      caracter =(caracter-90) + 65;
-      return("valor con while" + caracter);
-    }
-    if caracter*/
-    //console.log("nuevos valores " + ejemplo);
-    
+    //alert("tu mensaje secreto es: " + (caracter[i]));
   }
-
-
   
 }
 
