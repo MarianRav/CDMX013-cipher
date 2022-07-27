@@ -18,9 +18,9 @@ const cipher = {
       console.log(caracter);
       ejemplo = ejemplo + caracter; 
     }
-  
+
+    return(ejemplo);
     console.log("tu mensaje es: " + ejemplo);
-    alert("Tu mensaje secreto es: " + ejemplo);
     
   },
 

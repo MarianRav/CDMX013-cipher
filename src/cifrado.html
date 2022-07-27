@@ -15,6 +15,11 @@
         <h1>
           BLINDMESSAGE
         </h1>
+
+        <a href="index.html" class="linkIcon">
+          <img src="imagen/icono.png" alt="Icono" class="icono">
+        </a>
+
       </header>
 
       <main>
@@ -30,10 +35,17 @@
             </div>
 
             <div class="botUno">
-              <input class="botonSub" type="submit" value="Esconde tu mensaje" id="botonCifrado">
+              <input class="botonSub" type="button" value="Esconde tu mensaje" id="botonCifrado">
           </div>
 
         </form>
+
+        <section class="mensaje" id="resultadoCifrado">
+          <div>
+            <h3>Tu mensaje está listo para ser enviado. Recuerda compartirle número secreto a la persona a la que le quieres compartir tu mensaje<br/></h3>
+            <p id="popUp"></p>
+          </div>
+        </section>
       </main>
 
       <script src="/index.js" type="module"></script>

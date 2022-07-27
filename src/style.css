@@ -12,7 +12,19 @@ header{
     font-size: 30px; 
     text-align: center;
 }
+a.icono{
+    margin: none;
+}
+h1, .icono{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
 
+.icono{
+    width: 15%;
+    margin: none;
+}
 .bloque{
     text-align: center;
     margin-top: 10%;
@@ -80,4 +92,16 @@ label{
 
 .botUno{
     text-align: right;
+}
+
+.mensaje{
+    background-color: #fffaff;
+    border: 2px #d8315b;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
+#resultadoCifrado{
+    display: none;
 }
