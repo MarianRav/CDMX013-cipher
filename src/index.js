@@ -20,15 +20,3 @@ cipherButton.addEventListener("click",function(){
 //las variables deben tener el mismo nombre, pero aquí me va a dar error
 //debo hacer un archivo index. js para cada pantalla y no sean las mismas variables
 
-
-
-const decipherButton= document.getElementById("decipher");
-console.log(decipherButton);
-
-decipherButton.addEventListener("click", function(){
-    let string = document.getElementById('boxTwo').value;
-    let offset = parseInt(document.getElementById("number").value); 
-    string = string.toUpperCase();
-
-    cipher.decode(offset,string);
-});

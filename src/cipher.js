@@ -18,28 +18,38 @@ const cipher = {
       console.log(caracter);
       ejemplo = ejemplo + caracter; 
     }
-
+  
     return(ejemplo);
-    console.log("tu mensaje es: " + ejemplo);
     
   },
 
   decode: function(offset, string){
     console.log(string);
-    console.log(offset);
+    console.log("offset: " + offset);
   
     let mensajeDecifrado= '';
   
     for(let i = 0; i < string.length; i++){
       let caracter = string.charCodeAt([i]);
-      console.log("número ASCII " + string);
-      caracter= (caracter- 65 -offset)% 26 + 65; //FÓRMULA
-      caracter = String.fromCharCode(caracter);
-     
-      console.log(string);
-      mensajeDecifrado = mensajeDecifrado + string;
+      console.log("número ASCII " + caracter);
+      caracter = ((caracter - 65) - offset) % 26;
+      console.log(caracter);
+      if(caracter < 0){
+        caracter = ((caracter % 26) + 26) + 65;
+        caracter = String.fromCharCode(caracter);
+        console.log(caracter);
+      } else{
+        caracter = caracter + 65;
+        caracter = String.fromCharCode(caracter);
+        console.log(caracter);
+      }
+      
+      mensajeDecifrado = mensajeDecifrado + caracter;
+
+      console.log(mensajeDecifrado);
     }
-    alert("Tu mensaje es: " + mensajeDecifrado);
+    
+    return(mensajeDecifrado);
   }
 };
 

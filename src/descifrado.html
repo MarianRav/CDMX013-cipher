@@ -21,7 +21,7 @@
       </header>
 
       <main>
-        <form> <!--CAJA DE TEXTO-->
+        <form id="descifrado"> <!--CAJA DE TEXTO-->
           <div>
             <label>Escribe el mensaje que quieres revelar:<br/></label>
             <textarea class="caja" id="boxTwo"></textarea>
@@ -33,11 +33,19 @@
           </div>
 
           <div class="botUno">
-              <input class="botonSub" type="submit" value="Descubre tu mensaje" id="decipher">
+              <input class="botonSub" type="button" value="Descubre tu mensaje" id="decipher">
           </div>
         </form>
+
+        <section class="mensaje" id="mensajeDescifrado">
+          <div>
+            <h3>Tu mensaje está listo para ser enviado. Recuerda compartirle número secreto a la persona a la que le quieres compartir tu mensaje<br/></h3>
+            <p id="popUp"></p>
+          </div>
+
+        </section>
       </main>
 
-      <script src="/index.js" type="module"></script>
+      <script src="/indexDe.js" type="module"></script>
 </body>
 </html>
