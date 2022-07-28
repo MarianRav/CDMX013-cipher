@@ -86,8 +86,9 @@ form{
 
 label{
     font-family: 'Varela Round', sans-serif;
-    color: #0a2463;
+    color:#0a2463;
     font-weight: bold;
+    padding: 5px;
 }
 
 .botUno{
@@ -97,9 +98,12 @@ label{
 .mensaje{
     background-color: #fffaff;
     border: 2px #d8315b;
-    width: 80%;
+    width: 91%;
     height: 80%;
+    text-align: center;
     align-self: center;
+    margin: 30px;
+    padding: 20px;
 }
 
 #resultadoCifrado{
@@ -108,4 +112,48 @@ label{
 
 #mensajeDescifrado{
     display: none;
+}
+
+.nuevoMensaje{
+ margin: 30px;
+}
+
+h3{
+    margin: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #d8315b;
+}
+
+p{
+    font-family: 'Varela Round', sans-serif;
+    color:#0a2463;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h4{
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    text-align: left;
+    margin-left: 20%;
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+h5{
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: bold;    
+}
+.bloqueBotonesFinal{
+    margin: 20px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.botonesFinal{
+    display: inline-block;
+    
 }
