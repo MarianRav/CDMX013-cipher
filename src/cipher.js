@@ -2,51 +2,53 @@ const cipher = {
   
   encode: function(offset, string){
   
-    console.log(string);
-    console.log(typeof string);
-    console.log("Tu número secreto es " + offset);
-    console.log(typeof offset);
-    
-    let ejemplo = '';
+    let mensajeCifrado = '';
   
     for(let i = 0; i < string.length; i++){
       let caracter = string.charCodeAt([i]);
-      console.log("número ASCII " + caracter);
-      caracter= (caracter- 65 + offset)% 26 + 65; //FÓRMULA
-      console.log("el nuevo valor es " + caracter);
+      if(caracter >= 65 && caracter <= 90){
+      caracter= (caracter- 65 + offset)% 26 + 65;
       caracter = String.fromCharCode(caracter);
-      console.log(caracter);
-      ejemplo = ejemplo + caracter; 
+      mensajeCifrado = mensajeCifrado + caracter; 
     }
-  
-    return(ejemplo);
+  if(caracter >= 97 && caracter <= 122){
+      caracter= (caracter- 97 + offset)% 26 + 97;
+      caracter = String.fromCharCode(caracter);
+      mensajeCifrado = mensajeCifrado + caracter; 
+    }
+}
+    return(mensajeCifrado);
     
-  },
-
+  
+},
   decode: function(offset, string){
-    console.log(string);
-    console.log("offset: " + offset);
   
     let mensajeDecifrado= '';
   
     for(let i = 0; i < string.length; i++){
       let caracter = string.charCodeAt([i]);
-      console.log("número ASCII " + caracter);
+      if(caracter >= 65 && caracter <= 90){
       caracter = ((caracter - 65) - offset) % 26;
-      console.log(caracter);
       if(caracter < 0){
         caracter = ((caracter % 26) + 26) + 65;
         caracter = String.fromCharCode(caracter);
-        console.log(caracter);
       } else{
         caracter = caracter + 65;
         caracter = String.fromCharCode(caracter);
-        console.log(caracter);
-      }
-      
+      }}
+      if(caracter >= 97 && caracter <= 122){
+        caracter = ((caracter - 97) - offset) % 26;
+        if(caracter < 0){
+          caracter = ((caracter % 26) + 26) + 97;
+          caracter = String.fromCharCode(caracter);
+        } else{
+          caracter = caracter + 97;
+          caracter = String.fromCharCode(caracter);
+        }}
+
       mensajeDecifrado = mensajeDecifrado + caracter;
 
-      console.log(mensajeDecifrado);
+      
     }
     
     return(mensajeDecifrado);

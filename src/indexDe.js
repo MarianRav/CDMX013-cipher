@@ -6,7 +6,6 @@ console.log(decipherButton);
 decipherButton.addEventListener("click", function(){
     let string = document.getElementById('boxTwo').value;
     let offset = parseInt(document.getElementById("number").value); 
-    string = string.toUpperCase();
     if(string ===""){
         alert("Ingresa un mensaje");
     }if(isNaN(offset)){

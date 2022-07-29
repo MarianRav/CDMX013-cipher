@@ -149,7 +149,8 @@ h5{
     font-family: 'Varela Round', sans-serif;
     color: black;
     text-align: center;
-    font-weight: bold;    
+    font-weight: bold;
+    font-size: 16px;    
 }
 .bloqueBotonesFinal{
     margin: 20px;

@@ -9,7 +9,6 @@ console.log(cipherButton);
 cipherButton.addEventListener("click",function(){
     let string = document.getElementById('box').value;
     let offset = parseInt(document.getElementById("number").value); 
-    string = string.toUpperCase();
     if(string ===""){
         alert("Ingresa un mensaje");
     }if(isNaN(offset)){
