@@ -1,7 +1,7 @@
 import cipher from './cipher.js';
 
 const decipherButton= document.getElementById("decipher");
-console.log(decipherButton);
+
 
 decipherButton.addEventListener("click", function(){
     let string = document.getElementById('boxTwo').value;

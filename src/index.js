@@ -4,7 +4,6 @@ console.log(cipher);
 
 
 const cipherButton = document.getElementById("botonCifrado");
-console.log(cipherButton);
 
 cipherButton.addEventListener("click",function(){
     let string = document.getElementById('box').value;

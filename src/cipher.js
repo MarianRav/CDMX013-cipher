@@ -4,6 +4,9 @@ const cipher = {
   
     let mensajeCifrado = '';
   
+    if(offset <= 0 && typeof string != "string"){
+      throw new TypeError();
+    }
     for(let i = 0; i < string.length; i++){
       let caracter = string.charCodeAt([i]);
       if(caracter >= 65 && caracter <= 90){
@@ -15,7 +18,7 @@ const cipher = {
       caracter= (caracter- 97 + offset)% 26 + 97;
       caracter = String.fromCharCode(caracter);
       mensajeCifrado = mensajeCifrado + caracter; 
-    }
+    } 
 }
     return(mensajeCifrado);
     
@@ -24,7 +27,9 @@ const cipher = {
   decode: function(offset, string){
   
     let mensajeDecifrado= '';
-  
+    if(offset <= 0 && typeof string != "string"){
+      throw new TypeError();
+    }
     for(let i = 0; i < string.length; i++){
       let caracter = string.charCodeAt([i]);
       if(caracter >= 65 && caracter <= 90){
@@ -44,11 +49,11 @@ const cipher = {
         } else{
           caracter = caracter + 97;
           caracter = String.fromCharCode(caracter);
-        }}
+        }
+      }
 
       mensajeDecifrado = mensajeDecifrado + caracter;
 
-      
     }
     
     return(mensajeDecifrado);
