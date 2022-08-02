@@ -59,7 +59,7 @@ Cuando el usuario cifra un mensaje, se le pide que ingrese un número secreto qu
 
 Para revelar la información, el usuario debe ingresar el mensaje que le fue compartido, así como el número secreto que le permitirá desbloquear el contenido real. Asímismo, además de mostrar el mensaje revelado esta misma pantalla le ofrece dos botones al usuario, similares a los de la pantalla del ususario:  uno que lo llevará de regreso a la pantalla donde podrá seguir revelando más información, y otro que lo redireccionará a la función para esconder la respuesta a la información recibida.
 
-Gracias al feedback de los días de Demo, se cambió la paleta de colores para brindarle una mejor experiencia al usuario. Se utilizó el color `#3e92cc`para el fondo, el  `#fffaff` para el fondo del encabezado, `#0a2463` para las letras del título y del body; para el hoover de los botones se utilizó el color `#d8315b`. Actualmente el proyecto funciona para letras mayúsculas y minúsculas, el programa está en proceso de aceptar caracteres especiales.
+Gracias al feedback de los días de Demo, se cambió la paleta de colores para brindarle una mejor experiencia al usuario. Se utilizó el color `#3e92cc`para el fondo, el  `#fffaff` para el fondo del encabezado, `#0a2463` para las letras del título y del body; para el hover de los botones se utilizó el color `#d8315b`. Actualmente el proyecto funciona para letras mayúsculas y minúsculas, el programa está en proceso de aceptar caracteres especiales.
 
 A continuación se presentan las imágenes del proyecto final:
 
