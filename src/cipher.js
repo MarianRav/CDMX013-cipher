@@ -12,14 +12,14 @@ const cipher = {
       if(caracter >= 65 && caracter <= 90){
       caracter= (caracter- 65 + offset)% 26 + 65;
       caracter = String.fromCharCode(caracter);
-      mensajeCifrado = mensajeCifrado + caracter; 
+      mensajeCifrado += caracter; 
     }
   if(caracter >= 97 && caracter <= 122){
       caracter= (caracter- 97 + offset)% 26 + 97;
       caracter = String.fromCharCode(caracter);
-      mensajeCifrado = mensajeCifrado + caracter; 
-    } 
-}
+      mensajeCifrado += caracter; 
+    }
+  }
     return(mensajeCifrado);
     
   
@@ -38,7 +38,7 @@ const cipher = {
         caracter = ((caracter % 26) + 26) + 65;
         caracter = String.fromCharCode(caracter);
       } else{
-        caracter = caracter + 65;
+        caracter += 65;
         caracter = String.fromCharCode(caracter);
       }}
       if(caracter >= 97 && caracter <= 122){
@@ -47,12 +47,12 @@ const cipher = {
           caracter = ((caracter % 26) + 26) + 97;
           caracter = String.fromCharCode(caracter);
         } else{
-          caracter = caracter + 97;
+          caracter += 97;
           caracter = String.fromCharCode(caracter);
         }
       }
 
-      mensajeDecifrado = mensajeDecifrado + caracter;
+      mensajeDecifrado += caracter;
 
     }
     

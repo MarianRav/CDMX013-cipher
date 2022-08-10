@@ -1,8 +1,5 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
-
-
 const cipherButton = document.getElementById("botonCifrado");
 
 cipherButton.addEventListener("click",function(){
@@ -18,7 +15,7 @@ cipherButton.addEventListener("click",function(){
     document.getElementById("resultadoCifrado").style.display="block";
     document.getElementById("cifrado").style.display="none";
     document.getElementById("popUp").innerHTML = respuestaCifrado;
-    document.getElementById("recordatorio").innerText = "Recuerda compartir el número secreto (" + offset + "), con quien quieres compartir tu mensaje";
+    document.getElementById("recordatorio").innerText = "Copia el mensaje y recuerda compartir el número secreto (" + offset + "), con quien quieres compartir tu mensaje";
     }
 });
 
